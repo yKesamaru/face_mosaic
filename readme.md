@@ -1,3 +1,4 @@
+![](img/path1597.png)
 # 動機
 face_recognitionを使用して得られる顔座標は長方形であり、この座標をそのまま用いてぼかし処理を行った場合得られる画像は醜い。  
 ![](img/rectangle_blur-fs8.png)  
