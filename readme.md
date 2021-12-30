@@ -3,7 +3,8 @@ face_recognitionを使用して得られる顔座標は長方形であり、こ�
 ![](img/rectangle_blur-fs8.png)  
 それに対してモザイクによってぼかし処理を行うと自然に見える。  
 ![](img/rectangle_mosaic1-fs8.png)  
-これを静止画だけでなく動画にも適用したい。
+これを静止画だけでなく動画にも適用したい。  
+同じ働きを持つものは[ORB-HD/deface](https://github.com/ORB-HD/deface)が既に存在する。`deface`が`centerface.onnx`を用いるのに比べこちらはdlibを使用する。これらは顔検出のみか顔認識まで行うかで使い分けすると良いと思う。
 
 # 方法
 ## 静止画の場合
