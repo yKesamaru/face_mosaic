@@ -1,15 +1,15 @@
 # 動機
-face_recognitionを使用して得られる顔座標は長方形であり、この座標をそのまま用いてぼかし処理を行った場合得られる画像は醜い。
+face_recognitionを使用して得られる顔座標は長方形であり、この座標をそのまま用いてぼかし処理を行った場合得られる画像は醜い。  
 ![](img/rectangle_blur-fs8.png)  
-それに対してモザイクによってぼかし処理を行うと自然に見える。
+それに対してモザイクによってぼかし処理を行うと自然に見える。  
 ![](img/rectangle_mosaic1-fs8.png)  
 これを静止画だけでなく動画にも適用したい。
 
 # 方法
 face_recognitionのメソッドである`face_recognition.face_locations`の返り値は`(top, right, bottom, left)`の配列。
 ## 顔周りの長方形をぼかす
-original.png
-![](img/original.png)  
+original.png  
+![original.png](img/original.png)  
 
 ```python
 import cv2
