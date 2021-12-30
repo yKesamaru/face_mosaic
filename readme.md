@@ -6,8 +6,9 @@ face_recognitionを使用して得られる顔座標は長方形であり、こ�
 これを静止画だけでなく動画にも適用したい。
 
 # 方法
+## 静止画の場合
 face_recognitionのメソッドである`face_recognition.face_locations`の返り値は`(top, right, bottom, left)`の配列。
-## 顔周りの長方形をぼかす
+### 顔周りの長方形をぼかす
 original.png  
 ![original.png](img/original.png)  
 
@@ -27,7 +28,7 @@ if len(face_location_list) > 0:
 ```
 ![](img/rectangle_blur.png)  
 
-## モザイク処理
+### モザイク処理
 モザイク処理の方法は[note.nkmk.me Python, OpenCVで画像にモザイク処理（全面、一部、顔など）](https://note.nkmk.me/python-opencv-mosaic/)様よりアイデアを頂戴致しました。
 
 ```python
