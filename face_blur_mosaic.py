@@ -30,11 +30,11 @@ while True:
         dst = frame.copy()
         for (top, right, bottom, left) in face_location_list:
             # rectangle blur ======
-            dst[top:top + (bottom - top), left:left + (right - left)] = cv2.blur(
-                dst[top:top + (bottom - top), left:left + (right - left)], (50, 50))
+            # dst[top:top + (bottom - top), left:left + (right - left)] = cv2.blur(
+            #     dst[top:top + (bottom - top), left:left + (right - left)], (50, 50))
             # mosaic blur =========
-            # dst[top:top + (bottom - top), left:left + (right - left)] = mosaic(
-            #     dst[top:top + (bottom - top), left:left + (right - left)], 0.1)
+            dst[top:top + (bottom - top), left:left + (right - left)] = mosaic(
+                dst[top:top + (bottom - top), left:left + (right - left)], 0.1)
 
     event, _ = window.read(timeout=1)
     imgbytes = cv2.imencode(".png", dst)[1].tobytes()
