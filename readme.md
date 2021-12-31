@@ -1,4 +1,5 @@
-![](img/path1597.png)
+![](img/path1597.png)  
+  
 # 動機
 face_recognitionを使用して得られる顔座標は長方形であり、この座標をそのまま用いてぼかし処理を行った場合得られる画像は醜い。  
 ![](img/rectangle_blur-fs8.png)  
@@ -103,3 +104,12 @@ vcap.release()
 ![](img/blur_mosaic.gif)  
 
 期待通りの結果が得られました。
+
+# Reference
+- [ORB-HD/deface](https://github.com/ORB-HD/deface)
+- [note.nkmk.me Python, OpenCVで画像にモザイク処理（全面、一部、顔など）](https://note.nkmk.me/python-opencv-mosaic/)
+- [【Zenn】動画の中の顔全てにモザイクをかける](https://zenn.dev/ykesamaru/articles/fe206cc8b27833)
+# Author
+yKesamaru
+# License
+MIT License
