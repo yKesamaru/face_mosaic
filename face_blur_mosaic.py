@@ -31,7 +31,7 @@ layout = [
     [sg.Image(key='display')],
     [sg.Button('terminate', key='terminate', button_color='red')]
 ]
-window = sg.Window('blur', layout, location=(50, 50))
+window = sg.Window('blur', layout, location=(50, 50), disable_close=True)
 
 while True:
     ret, frame = vcap.read()
